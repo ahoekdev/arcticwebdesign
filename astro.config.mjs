@@ -5,8 +5,10 @@ import netlify from "@astrojs/netlify";
 
 import react from "@astrojs/react";
 
+import sanity from "@sanity/astro";
+
 // https://astro.build/config
 export default defineConfig({
   adapter: netlify(),
-  integrations: [react()],
+  integrations: [react(), sanity()],
 });
